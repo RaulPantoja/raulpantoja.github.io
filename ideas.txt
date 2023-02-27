@@ -1,0 +1,32 @@
+parallax css con flechas hacia abajo
+prompt consola
+
+clip-path triangulo en esquinas con gif de rgb o algo parecido(todo esto en el body)
+https://bennettfeely.com/clippy/
+
+css section separator generator reversed y no-reversed
+https://wweb.dev/resources/css-separator-generator/
+
+al hacer click nos desplaza hasta la caja que hemos hecho click
+backdrop-filter
+https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+
+https://codepen.io/AlexGolovanov/pen/QWVjNyy
+punto y coma de titulo con animacion aparece y desaparece
+
+todos los proyectos con hover boxshadow neon
+border-radius:10px a foto mia
+eliminar o modificar scroll bar
+
+drop-shadow en imagenes
+
+cambiar formulario
+
+usuario telegram
+
+fade in cuando estoy viendo un proyecto y fade out cuando dejo de verlo
+
+PROYECTOS:
+-aplicacion java 
+-buscaminas
+-casas rurales
