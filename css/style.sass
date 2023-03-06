@@ -1,36 +1,39 @@
 
 *
     box-sizing: border-box
+html
+    scroll-behavior: smooth
 .wrapper
     height: 100vh
-    overflow-y: auto
 body
     font-family: "Montserrat",sans-serif
     margin: 0
     padding: 0
 .principal
     height: 100vh
-    background-image: url(../fondos/6327211.png)
+    background-image: url(../fondos/6327211.webp)
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
     color: white
     display: flex
     flex-direction: column
+    justify-content: space-between
     .job
         font-weight: bold
         color: red
         font-style: normal
 .info
-    padding-top: 230px
     text-align: center
 .activeInfo
     padding-top: 102px
 header
+    // background: #0f1922
     display: flex
     align-items: center
     img
         width: 20%
+        height: 20%
 
     .navbar
         display: flex
@@ -55,6 +58,8 @@ header
             width: 100%
             background-color: white
             border-radius: 10px
+a
+    text-decoration: none
 .toggle-button
     display: flex
 
@@ -104,10 +109,14 @@ header
         text-align: center
         font-size: 1.3em
     .mePhoto
-        max-width: 35%
+        border-radius: 10px
+        width: 45%
+        height: 45%
         // max-height: 50%
 .trayectoria
     margin-top: 85px
+    margin-bottom: 85px
+
     display: flex
     flex-direction: column
     justify-content: center
@@ -117,32 +126,238 @@ header
     width: 0
     height: 0
     border-left: 13px solid transparent
-    border-right:  13px solid transparent
+    border-right: 13px solid transparent
     border-top: 33px solid #242424
     animation: breath 1s ease-in-out infinite
 .proyectos
     background-color: #1f1f1f
-@keyframes breath 
-  0% 
-    transform: scale(1)
-  
-  50% 
-    transform: scale(0.9)
-  
-  100% 
-    transform: scale(1)
-  
+@keyframes breath
+    0%
+        transform: scale(1)
+
+    50%
+        transform: scale(0.9)
+
+    100%
+        transform: scale(1)
 
 .tra1
     clip-path: circle(50% at 50% 50%)
+    width: 20%
+    height: 20%
 .tra2
     clip-path: circle(29.9% at 53% 53%)
+    width: 45%
+    height: 45%
 .tra3
-    width: 230px
+    width: 30%
+    height: 30%
     clip-path: circle(52.9% at 50% 46%)
 .tra4
-    width: 180px
+    width: 20%
+    height: 20%
+.proyectos
+    color: white
+    text-align: center
+    display: grid
+    gap: 70px
+    .pro1
+        min-height: 100vh
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+        // width: 100%
+        .imgPro1
+            filter: grayscale(100%)
+            width: 70%
+            height: 100%
+            &:hover
+                transition: 2s
+                filter: grayscale(0%)
+    .pro2
+        min-height: 100vh
+
+        display: flex
+        align-items: center
+        justify-content: center
+        .imgPro2
+            filter: grayscale(100%)
+            width: 70%
+            height: 70%
+            &:hover
+                transition: 2s
+                filter: grayscale(0%)
+    .pro3
+        min-height: 100vh
+
+        display: flex
+        // flex-direction: column
+        gap: 10px
+        align-items: center
+        justify-content: center
+        .imgPro3
+            filter: grayscale(100%)
+            width: 63%
+            height: 100%
+            &:hover
+                transition: 2s
+                filter: grayscale(0%)
+main
+    h1
+        text-align: center
+.logoHtml
+    width: 15%
+    height: 15%
+.logoCss
+    width: 15%
+    height: 15%
+.logoJs
+    width: 15%
+    height: 15%
+.logoJava
+    width: 15%
+    height: 15%
+.logoScene
+    width: 15%
+    height: 15%
+.skills
+    h2
+        text-align: center
+.wrapper-skills
+    // height: 1000px
+    font-size: 1em
+    display: flex
+    justify-content: space-evenly
+    align-items: baseline
+    // gap: 50px
+    ul
+        display: grid
+        gap: 25px
+        padding: 0
+        list-style: none
+.socialImg
+    background-image: url(../fondos/social-media.webp)
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 100vh
+.social
+    width: 60%
+.skillsImg
+    background-color: black
+    background-image: url(../fondos/skills.webp)
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: auto 42%
+    min-height: 100vh
+.contacto
+    padding-top: 30px
+    padding-bottom: 30px
+    display: grid
+    justify-items: center
+    justify-content: center
+    background-size: auto
+    background-image: url(../fondos/backgroundContact.webp)
+    color: white
+    .socialIcons
+        display: flex
+        flex-direction: row
+        gap: 20px
+        a
+            color: white
+            text-decoration: none
+    .fa-telegram,.fa-twitter,.fa-envelope,.fa-linkedin,.fa-github
+        font-size: 2em
+
+    h2
+        color: #f5c1ff
+        text-align: left
+
+    // PROYECTOS
+section
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    &:nth-child(2)
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+    &:nth-child(3)
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+    &:nth-child(4)
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+    h1
+        color: white
+.reveal
+    position: relative
+    transform: translateY(150px)
+    opacity: 0
+    transition: all 2s ease
+.activeFade
+    transform: translateY(0px)
+    opacity: 1
+footer
+    padding-bottom: 20px
+    display: grid
+    justify-items: center
+    margin-top: 50px
+    gap: 40px
+    background-color: #0f1922
+    ul
+        width: 85%
+        padding-left: 0px
+        border-top: 1px #d9e4eeab solid
+        border-bottom: 1px #d9e4eeab solid
+        gap: 40px
+        list-style: none
+        color: white
+        display: flex
+        justify-content: center
+        li
+            font-size: 1.2em
+            margin-top: 20px
+            margin-bottom: 20px
+            a
+                text-decoration: none
+                color: white
+    img
+        width: 20%
+        height: 100%
+    span
+        font-size: 1em
+        color: white
+        font-weight: bold
+
 @media (min-width:768px)
+    .logoHtml
+        width: 15%
+        height: 15%
+    .logoCss
+        width: 15%
+        height: 15%
+    .logoJs
+        width: 15%
+        height: 15%
+    .logoJava
+        width: 15%
+        height: 15%
+    .logoScene
+        width: 15%
+        height: 15%
+    .proyectos
+        .pro1
+            .imgPro1
+                max-width: 60%
+        .pro2
+            .imgPro2
+                max-width: 60%
+
+        .pro3
+            .imgPro3
+                max-width: 60%
     .trayectoria
         span
             font-size: 1.5em
@@ -191,3 +406,9 @@ header
             flex-direction: row
         .toggle-button
             display: none
+
+    .skillsImg
+        background-size: cover
+    .socialImg
+        background-image: url(../fondos/social.webp)
+@media (min-width:1024px)

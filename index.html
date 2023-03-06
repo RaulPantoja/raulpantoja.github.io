@@ -1,38 +1,48 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Raul Pantoja" />
+    <meta name="description" content="Portfolio de Raul Pantoja" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&family=Roboto&display=swap");
     </style>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script
+      src="https://kit.fontawesome.com/0908b73303.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script/lib/type.js"></script>
     <script src="script/script.js"></script>
     <title>Portfolio Raul</title>
+    <link
+      rel="shortcut icon"
+      href="./logos/rp-logo-negro-fondo-blanco.webp"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <noscript
       >Necesitas JavaScript para ver el contenido completo de la
       pagina</noscript
     >
-    <body>
       <div class="wrapper">
         <div class="principal">
           <header>
             <nav class="navbar">
               <div class="title">
-                <img src="logos/rp-logo-blanco.png" />Raul Pantoja
+                <img alt="logoBlanco" src="logos/rp-logo-blanco.webp" />Raul
+                Pantoja
               </div>
-              <a href="#" class="toggle-button">
+              <a
+                aria-label="Abrir menu navegación"
+                href="#"
+                class="toggle-button"
+              >
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -41,13 +51,28 @@
               <div class="navbar-links">
                 <ul>
                   <li style="--clr: #ffdd1c">
-                    <a data-text="&nbsp;About" href="#about">&nbsp;About</a>
+                    <a
+                      aria-label="Sobre mí"
+                      data-text="&nbsp;About"
+                      href="#about"
+                      >&nbsp;About</a
+                    >
                   </li>
                   <li style="--clr: #ff00ff">
-                    <a data-text="&nbsp;Projects" href="#">&nbsp;Projects</a>
+                    <a
+                      aria-label="Proyectos realizados"
+                      data-text="&nbsp;Projects"
+                      href="#project"
+                      >&nbsp;Projects</a
+                    >
                   </li>
                   <li style="--clr: #00008b">
-                    <a data-text="&nbsp;Contact" href="#">&nbsp;Contact</a>
+                    <a
+                      aria-label="Contacta conmigo"
+                      data-text="&nbsp;Contact"
+                      href="#contact"
+                      >&nbsp;Contact</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -58,56 +83,198 @@
             <h3>Soy <span class="typed"></span></h3>
           </div>
         </div>
-        <!-- <div class="gif-container"></div> -->
-        <div id="about" class="about">
-          <div class="infoAbout">
-            <img class="mePhoto" src="./img/me2.jpg" />
-            <span
-              >¡Hola! Mi nombre es
-              <h4>Raúl Pantoja</h4>
-              actualmente estoy estudiando Desarrollo de Aplicaciones Web en el
-              I.E.S Gran Capitán.
-            </span>
-            <!-- Mi primer proyecto fue en scratch, haciendo un
+        <main>
+          <h1>Sobre mí</h1>
+          <div id="about" class="about">
+            <div class="infoAbout">
+              <img alt="personalPhoto" class="mePhoto" src="./img/me2.webp" />
+              <span
+                >¡Hola! Mi nombre es
+                <h2>Raúl Pantoja</h2>
+                actualmente estoy estudiando Desarrollo de Aplicaciones Web en
+                el I.E.S Gran Capitán.
+              </span>
+              <!-- Mi primer proyecto fue en scratch, haciendo un
               videojuego, desde ahí ya me llamo la atencion todo el tema de
               desarrollo, por lo que hice un Grado Medio de Sistemas
               Microinformáticos y Redes en el I.E.S Profesor Tierno Galván -->
-            <div class="trayectoria">
-              <img class="tra1" src="img/scratch.png" />
-              <span
-                >Mi primer proyecto fue en scratch en una asignatura de
-                Informática, hice un videojuego y desde ese momento ya me llamo
-                la atención el desarrollo</span
-              >
-              <div class="arrow-down"></div>
-              <img class="tra2" src="img/tra2.jpg" />
-              <span
-                >Por lo que hice un Grado Medio de Sistemas Microinformaticos y
-                Redes en el I.E.S Profesor Tierno Galván</span
-              >
-              <div class="arrow-down"></div>
-              <img class="tra3" src="img/tra3.jpg" />
-              <span
-                >Después del Grado Medio hice un Grado Superior de Desarrollo de
-                Aplicaciones Multiplataforma en el I.E.S Francisco de los
-                Ríos</span
-              >
-              <div class="arrow-down"></div>
-              <img class="tra4" src="img/tra4.jpg" />
-              <span
-                >Actualmente estoy cursando el Grado Superior de Aplicaciones
-                Web en el I.E.S Gran Capitán</span
-              >
+              <div class="trayectoria">
+                <img alt="scratch" class="tra1" src="img/scratch.webp" />
+                <span
+                  >Mi primer proyecto fue en scratch en una asignatura de
+                  Informática, hice un videojuego y desde ese momento ya me
+                  llamo la atención el desarrollo</span
+                >
+                <div class="arrow-down"></div>
+                <img alt="iesTierno" class="tra2" src="img/tra2.webp" />
+                <span
+                  >Por lo que hice un Grado Medio de Sistemas Microinformaticos
+                  y Redes en el I.E.S Profesor Tierno Galván</span
+                >
+                <div class="arrow-down"></div>
+                <img alt="iesFrancisco" class="tra3" src="img/tra3.webp" />
+                <span
+                  >Después del Grado Medio hice un Grado Superior de Desarrollo
+                  de Aplicaciones Multiplataforma en el I.E.S Francisco de los
+                  Ríos</span
+                >
+                <div class="arrow-down"></div>
+                <img alt="iesCapitan" class="tra4" src="img/tra4.webp" />
+                <span
+                  >Actualmente estoy cursando el Grado Superior de Aplicaciones
+                  Web en el I.E.S Gran Capitán</span
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="proyectos">
-          <h2>PROYECTOS</h2>
-          <div class="pro1">
-            
+          <!-- PROYECTOS -->
+          <div id="project" class="proyectos">
+            <section>
+              <h1>PROYECTOS REALIZADOS</h1>
+            </section>
+            <section>
+              <a
+                aria-label="Practica Casas Rurales"
+                target="_blank"
+                href="https://iesgrancapitan-diw.github.io/practica12-diw-RaulPantoja/"
+              >
+                <div class="container reveal">
+                  <h1>Casas Rurales</h1>
+                  <div class="pro1">
+                    <img alt="css" class="logoCss" src="./logos/csslogo.webp" />
+                    <img
+                      alt="proyecto1"
+                      class="imgPro1"
+                      src="./img/pro1.webp"
+                    />
+                    <img
+                      alt="html"
+                      class="logoHtml"
+                      src="./logos/htmllogo.webp"
+                    />
+                  </div></div
+              ></a>
+            </section>
+            <section>
+              <a
+                aria-label="Practica Buscaminas"
+                target="_blank"
+                href="https://cautious-adventure-59k6nne.pages.github.io"
+              >
+                <div class="container reveal">
+                  <h1>Buscaminas</h1>
+                  <div class="pro2">
+                    <img
+                      alt="html"
+                      class="logoHtml"
+                      src="./logos/htmllogo.webp"
+                    />
+                    <img
+                      alt="proyecto2"
+                      class="imgPro2"
+                      src="./img/pro2.webp"
+                    />
+                    <img alt="js" class="logoJs" src="./logos/jslogo.webp" />
+                  </div></div
+              ></a>
+            </section>
+            <section>
+              <a
+                aria-label="Proyecto VideoJuego"
+                target="_blank"
+                href="https://github.com/RaulPantoja/DungeonTreassure.git"
+              >
+                <div class="container reveal">
+                  <h1>Dungeon Treassure</h2>
+                  <div class="pro3">
+                    <img
+                      alt="scene"
+                      class="logoScene"
+                      src="./logos/scenebuilderlogo.webp"
+                    />
+                    <img
+                      alt="proyecto3"
+                      class="imgPro3"
+                      src="./img/pro3.webp"
+                    />
+                    <img
+                      alt="java"
+                      class="logoJava"
+                      src="./logos/javalogo.webp"
+                    />
+                  </div></div
+              ></a>
+            </section>
           </div>
-        </div>
+          <div class="skills">
+            <div class="skillsImg"></div>
+            <div class="wrapper-skills">
+              <div class="hardSkills">
+                <h2>Hard Skills</h2>
+                <ul>
+                  <li>Creatividad</li>
+                  <li>
+                    <i class="fa-solid fa-computer"></i>Manejo del sistema
+                    operativo
+                  </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-certificate"></i>Certificado
+                    B1
+                  </li>
+                </ul>
+              </div>
+              <div class="softSkills">
+                <h2>Soft Skills</h2>
+                <ul>
+                  <li>Flexibilidad</li>
+                  <li>Trabajo en equipo</li>
+                  <li>
+                    <i class="fa-regular fa-clock"></i>Organización del tiempo
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="socialImg">
+          </div>
+          <div id="contact" class="contacto">
+            <h1>CONTACTO</h1>
+            <h2>Contacta conmigo</h2>
+            <h3>raulpantojaporras8@gmail.com</h3>
+            <div class="socialIcons">
+              <!-- <a href=""><i class="fa-brands fa-telegram"></i></a> -->
+              <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+              <a
+                aria-label="Mandame un correo"
+                href="mailto:raulpantojaporras8@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a
+                aria-label="Enlace a linkedin"
+                href="https://www.linkedin.com/in/raul-pantoja-porras-949bb0221/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                aria-label="Enlace a github"
+                href="https://github.com/RaulPantoja"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <img alt="logoBlanco" src="logos/rp-logo-blanco.webp" />
+          <ul>
+            <li><a aria-label="Sobre mí" href="#about">About</a></li>
+            <li>
+              <a aria-label="Proyectos realizados" href="#project">Projects</a>
+            </li>
+            <li>
+              <a aria-label="Contacta conmigo" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <span>Copyright &copy; Raul Pantoja Porras</span>
+        </footer>
       </div>
-    </body>
   </body>
-</html> -->
+</html>
