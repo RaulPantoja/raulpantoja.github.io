@@ -2,16 +2,12 @@ parallax css con flechas hacia abajo
 prompt consola
 
 clip-path triangulo en esquinas con gif de rgb o algo parecido(todo esto en el body)
-https://bennettfeely.com/clippy/
 
 css section separator generator reversed y no-reversed
-https://wweb.dev/resources/css-separator-generator/
 
 al hacer click nos desplaza hasta la caja que hemos hecho click
 backdrop-filter
-https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
 
-https://codepen.io/AlexGolovanov/pen/QWVjNyy
 punto y coma de titulo con animacion aparece y desaparece
 
 todos los proyectos con hover boxshadow neon

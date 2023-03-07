@@ -130,7 +130,7 @@ a
     border-top: 33px solid #242424
     animation: breath 1s ease-in-out infinite
 .proyectos
-    background-color: #1f1f1f
+    background-color: #151515
 @keyframes breath
     0%
         transform: scale(1)
@@ -162,45 +162,41 @@ a
     display: grid
     gap: 70px
     .pro1
-        min-height: 100vh
+        // min-height: 100vh
 
         display: flex
         align-items: center
-        justify-content: center
+        justify-content: space-around
 
         // width: 100%
         .imgPro1
             filter: grayscale(100%)
-            width: 70%
+            width: 67%
             height: 100%
             &:hover
                 transition: 2s
                 filter: grayscale(0%)
     .pro2
-        min-height: 100vh
+        // min-height: 100vh
 
         display: flex
         align-items: center
-        justify-content: center
+        justify-content: space-around
         .imgPro2
             filter: grayscale(100%)
-            width: 70%
-            height: 70%
+            width: 67%
+            height: 67%
             &:hover
                 transition: 2s
                 filter: grayscale(0%)
     .pro3
-        min-height: 100vh
-
         display: flex
-        // flex-direction: column
-        gap: 10px
         align-items: center
-        justify-content: center
+        justify-content: space-around
         .imgPro3
             filter: grayscale(100%)
-            width: 63%
-            height: 100%
+            width: 60%
+            height: 60%
             &:hover
                 transition: 2s
                 filter: grayscale(0%)
@@ -243,7 +239,7 @@ main
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    min-height: 100vh
+    min-height: 80vh
 .social
     width: 60%
 .skillsImg
@@ -260,13 +256,19 @@ main
     display: grid
     justify-items: center
     justify-content: center
-    background-size: auto
+    background-size: cover
     background-image: url(../fondos/backgroundContact.webp)
     color: white
-    .socialIcons
+    // .socialIcons
+        // display: flex
+        // flex-direction: row
+        // gap: 20px
+    ul
         display: flex
-        flex-direction: row
+        padding-left: 0
         gap: 20px
+        li
+            list-style: none
         a
             color: white
             text-decoration: none
@@ -284,19 +286,33 @@ section
     justify-content: center
     align-items: center
     &:nth-child(2)
-        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+        border: 2px solid white
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px -12px 18px 0px
     &:nth-child(3)
-        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+        border: 2px solid white
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 20px 15px
     &:nth-child(4)
-        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 0px 16px 9px
+        border: 2px solid white
+        box-shadow: rgb(136 165 191 / 48%) 0px 0px 14px 0px, rgb(255 0 165 / 75%) 0px 12px 18px 0px
     h1
         color: white
 .reveal
     position: relative
     transform: translateY(150px)
     opacity: 0
-    transition: all 2s ease
+    transition: all 1.8s ease
+.seeProyect
+    font-size: 2em
+    font-weight: bold
+    color: white
 .activeFade
+    min-height: 100vh
+
+    display: flex
+    flex-direction: column
+    // gap: 10px
+    align-items: center
+    justify-content: space-around
     transform: translateY(0px)
     opacity: 1
 footer
@@ -333,31 +349,31 @@ footer
 
 @media (min-width:768px)
     .logoHtml
-        width: 15%
-        height: 15%
+        width: 10%
+        height: 10%
     .logoCss
         width: 15%
         height: 15%
     .logoJs
-        width: 15%
-        height: 15%
+        width: 10%
+        height: 10%
     .logoJava
-        width: 15%
-        height: 15%
+        width: 10%
+        height: 10%
     .logoScene
-        width: 15%
-        height: 15%
+        width: 10%
+        height: 10%
     .proyectos
         .pro1
             .imgPro1
                 max-width: 60%
         .pro2
             .imgPro2
-                max-width: 60%
+                max-width: 40%
 
         .pro3
             .imgPro3
-                max-width: 60%
+                max-width: 50%
     .trayectoria
         span
             font-size: 1.5em
@@ -412,3 +428,38 @@ footer
     .socialImg
         background-image: url(../fondos/social.webp)
 @media (min-width:1024px)
+    .logoCss
+        width: 10%
+    .logoHtml
+        width: 10%
+    .tra1
+        clip-path: circle(50% at 50% 50%)
+        width: 10%
+        height: 10%
+    .tra2
+        clip-path: circle(29.9% at 53% 53%)
+        width: 20%
+        height: 20%
+    .tra3
+        width: 12%
+        height: 12%
+        clip-path: circle(52.9% at 50% 46%)
+    .tra4
+        width: 12%
+        height: 12%
+    .trayectoria
+        span
+            font-size: 1.6em
+    .proyectos
+        .pro1
+            .imgPro1
+                width: 40%
+                height: 40%
+        .pro2
+            .imgPro2
+                width: 35%
+                height: 35%
+        .pro3
+            .imgPro3
+                width: 40%
+                height: 40%

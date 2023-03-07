@@ -171,7 +171,7 @@ a {
 }
 
 .proyectos {
-  background-color: #1f1f1f;
+  background-color: #151515;
 }
 
 @keyframes breath {
@@ -215,14 +215,13 @@ a {
   gap: 70px;
 }
 .proyectos .pro1 {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .proyectos .pro1 .imgPro1 {
   filter: grayscale(100%);
-  width: 70%;
+  width: 67%;
   height: 100%;
 }
 .proyectos .pro1 .imgPro1:hover {
@@ -230,31 +229,28 @@ a {
   filter: grayscale(0%);
 }
 .proyectos .pro2 {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .proyectos .pro2 .imgPro2 {
   filter: grayscale(100%);
-  width: 70%;
-  height: 70%;
+  width: 67%;
+  height: 67%;
 }
 .proyectos .pro2 .imgPro2:hover {
   transition: 2s;
   filter: grayscale(0%);
 }
 .proyectos .pro3 {
-  min-height: 100vh;
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .proyectos .pro3 .imgPro3 {
   filter: grayscale(100%);
-  width: 63%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
 }
 .proyectos .pro3 .imgPro3:hover {
   transition: 2s;
@@ -313,7 +309,7 @@ main h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .social {
@@ -336,16 +332,19 @@ main h1 {
   display: grid;
   justify-items: center;
   justify-content: center;
-  background-size: auto;
+  background-size: cover;
   background-image: url(../fondos/backgroundContact.webp);
   color: white;
 }
-.contacto .socialIcons {
+.contacto ul {
   display: flex;
-  flex-direction: row;
+  padding-left: 0;
   gap: 20px;
 }
-.contacto .socialIcons a {
+.contacto ul li {
+  list-style: none;
+}
+.contacto ul a {
   color: white;
   text-decoration: none;
 }
@@ -364,13 +363,16 @@ section {
   align-items: center;
 }
 section:nth-child(2) {
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 0px 16px 9px;
+  border: 2px solid white;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px -12px 18px 0px;
 }
 section:nth-child(3) {
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 0px 16px 9px;
+  border: 2px solid white;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 0px 20px 15px;
 }
 section:nth-child(4) {
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 0px 16px 9px;
+  border: 2px solid white;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 12px 18px 0px;
 }
 section h1 {
   color: white;
@@ -380,10 +382,21 @@ section h1 {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1.8s ease;
+}
+
+.seeProyect {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
 }
 
 .activeFade {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   transform: translateY(0px);
   opacity: 1;
 }
@@ -428,33 +441,33 @@ footer span {
 
 @media (min-width: 768px) {
   .logoHtml {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
   }
   .logoCss {
     width: 15%;
     height: 15%;
   }
   .logoJs {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
   }
   .logoJava {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
   }
   .logoScene {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
   }
   .proyectos .pro1 .imgPro1 {
     max-width: 60%;
   }
   .proyectos .pro2 .imgPro2 {
-    max-width: 60%;
+    max-width: 40%;
   }
   .proyectos .pro3 .imgPro3 {
-    max-width: 60%;
+    max-width: 50%;
   }
   .trayectoria span {
     font-size: 1.5em;
@@ -517,6 +530,48 @@ footer span {
   }
   .socialImg {
     background-image: url(../fondos/social.webp);
+  }
+}
+@media (min-width: 1024px) {
+  .logoCss {
+    width: 10%;
+  }
+  .logoHtml {
+    width: 10%;
+  }
+  .tra1 {
+    clip-path: circle(50% at 50% 50%);
+    width: 10%;
+    height: 10%;
+  }
+  .tra2 {
+    clip-path: circle(29.9% at 53% 53%);
+    width: 20%;
+    height: 20%;
+  }
+  .tra3 {
+    width: 12%;
+    height: 12%;
+    clip-path: circle(52.9% at 50% 46%);
+  }
+  .tra4 {
+    width: 12%;
+    height: 12%;
+  }
+  .trayectoria span {
+    font-size: 1.6em;
+  }
+  .proyectos .pro1 .imgPro1 {
+    width: 40%;
+    height: 40%;
+  }
+  .proyectos .pro2 .imgPro2 {
+    width: 35%;
+    height: 35%;
+  }
+  .proyectos .pro3 .imgPro3 {
+    width: 40%;
+    height: 40%;
   }
 }
 
