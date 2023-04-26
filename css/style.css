@@ -6,14 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
-  height: 100vh;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .principal {
@@ -35,10 +36,6 @@ body {
 
 .info {
   text-align: center;
-}
-
-.activeInfo {
-  padding-top: 102px;
 }
 
 header {
@@ -151,6 +148,54 @@ a {
   height: 45%;
 }
 
+:nth-of-type(5) {
+  transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.scroll-cards {
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 50vh;
+}
+.scroll-cards p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.scroll-cards h3 {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.scroll-cards > .scroll-cards__item + .scroll-cards__item {
+  margin-top: 40vh;
+}
+.scroll-cards h1 {
+  position: sticky;
+  top: 2rem;
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+.scroll-cards__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  position: sticky;
+  top: max(16vh, 10em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  background: #fff;
+  box-shadow: -1px 0px 18px 20px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 5 * var(--offset));
+}
+.scroll-cards__item p {
+  font-size: 1.2rem;
+}
+
 .trayectoria {
   margin-top: 85px;
   margin-bottom: 85px;
@@ -173,6 +218,9 @@ a {
 .proyectos {
   background-color: #151515;
 }
+.proyectos section h2 {
+  color: white;
+}
 
 @keyframes breath {
   0% {
@@ -187,8 +235,8 @@ a {
 }
 .tra1 {
   clip-path: circle(50% at 50% 50%);
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
 }
 
 .tra2 {
@@ -198,8 +246,8 @@ a {
 }
 
 .tra3 {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   clip-path: circle(52.9% at 50% 46%);
 }
 
@@ -257,8 +305,9 @@ a {
   filter: grayscale(0%);
 }
 
-main h1 {
+main h2 {
   text-align: center;
+  font-size: 2.4rem;
 }
 
 .logoHtml {
@@ -293,14 +342,21 @@ main h1 {
 .wrapper-skills {
   font-size: 1em;
   display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
 }
 .wrapper-skills ul {
   display: grid;
   gap: 25px;
   padding: 0;
   list-style: none;
+}
+.wrapper-skills ul li {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .socialImg {
@@ -322,7 +378,7 @@ main h1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 42%;
+  background-size: auto 30%;
   min-height: 100vh;
 }
 
@@ -364,18 +420,15 @@ section {
 }
 section:nth-child(2) {
   border: 2px solid white;
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px -12px 18px 0px;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgb(238, 232, 232) 0px -12px 18px 0px;
 }
 section:nth-child(3) {
   border: 2px solid white;
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 0px 20px 15px;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgb(238, 232, 232) 0px 0px 20px 15px;
 }
 section:nth-child(4) {
   border: 2px solid white;
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgba(255, 0, 165, 0.75) 0px 12px 18px 0px;
-}
-section h1 {
-  color: white;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 14px 0px, rgb(238, 232, 232) 0px 12px 18px 0px;
 }
 
 .reveal {
@@ -430,7 +483,7 @@ footer ul li a {
   color: white;
 }
 footer img {
-  width: 20%;
+  width: 15%;
   height: 100%;
 }
 footer span {
@@ -440,6 +493,11 @@ footer span {
 }
 
 @media (min-width: 768px) {
+  .wrapper-skills {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
   .logoHtml {
     width: 10%;
     height: 10%;
@@ -526,13 +584,28 @@ footer span {
     display: none;
   }
   .skillsImg {
-    background-size: cover;
+    background-size: contain;
   }
   .socialImg {
     background-image: url(../fondos/social.webp);
   }
 }
 @media (min-width: 1024px) {
+  .skillsImg {
+    background-size: cover;
+  }
+  footer img {
+    width: 10%;
+    height: 100%;
+  }
+  .infoAbout .mePhoto {
+    width: 20%;
+    height: 20%;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
   .logoCss {
     width: 10%;
   }
