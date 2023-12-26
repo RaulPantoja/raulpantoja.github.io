@@ -1,7 +1,0 @@
-*colores en header que tengan que ver con su parte
-*cambiar trayectoria
-mismo espacio abajo y arriba entre header y soy web developer
-*cambiar h1 solo el H1 tiene que tenerlo el titulo de la página
-*cambiar hardskills
-*manejo del sistema operativo NO
-*espacio entre iconos y texto de skill
